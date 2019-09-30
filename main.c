@@ -2,7 +2,10 @@
 
 int main(int argc, char *argv[])
     {
-        printf( "Hello word/n" );
+        printf("You've insert %d arguments", argc);
+
+        for (int i = 0; i < argc; ++i) 
+            printf("%s\n", argv[i]); 
 
         return 0;
     }
