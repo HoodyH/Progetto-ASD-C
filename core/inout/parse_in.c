@@ -1,12 +1,13 @@
+#include "parse_in.h"
 #include <stdio.h>
 #include <stdlib.h> 
 
 int read_args(int argc, char **argv)
 {   
-    printf("You've insert %d arguments\n", argc);
+    PARSE_IN_DEBUG("You've insert %d arguments\n", argc);
 
     for (int i = 0; i < argc; ++i) 
-        printf("%s\n", argv[i]); 
+        PARSE_IN_DEBUG("%s\n", argv[i]); 
 
     return 0;
 }
@@ -18,11 +19,11 @@ int read_float_input(float *data){
     char *endptr = NULL; 
     float current_value = 0.0;
 
-    printf ("\ninput: ");
+    printf ("\nInput: ");
     scanf ("%m[^\n]%*c", &input_line); 
 
     nptr = input_line;
-    printf("%s\n", nptr);
+    PARSE_IN_DEBUG("%s\n", nptr);
     while (*nptr)
     {   
         /*
