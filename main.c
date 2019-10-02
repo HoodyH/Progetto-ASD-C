@@ -1,11 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h> 
 
-int main(int argc, char *argv[])
-    {
-        printf("You've insert %d arguments", argc);
+#include "core/inout/parse_in.h"
 
-        for (int i = 0; i < argc; ++i) 
-            printf("%s\n", argv[i]); 
 
-        return 0;
-    }
+int main(int argc, char **argv)
+{
+    float *data;
+
+    read_float_input(data);
+
+    return 0;
+}
