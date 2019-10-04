@@ -20,5 +20,7 @@ Il risultato è la mediana inferiore pesata
 
 Calcolo della mediana inferiore pesata
 --------------------------------------
+pesata: è riferita ai coefficenti presenti
+inferiore: nel caso di n pari parti si prende il valore minimo tra i 2
 
 * radix sort

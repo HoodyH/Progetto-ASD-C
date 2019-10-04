@@ -6,7 +6,7 @@
 
 int main(int argc, char **argv)
 {
-    float *data;
+    float *data = malloc(sizeof(float)*100);
 
     read_float_input(data);
 

@@ -5,7 +5,7 @@
 /*
 Read the arguments passed on function start
 */
-int read_args(int argc, char **argv);
+int read_args(int argc, char **argv, void* data);
 
 /*
 R
@@ -13,7 +13,7 @@ R
 int read_float_input(float *data);
 
 #ifdef DEBUG_PARSE_IN
-# define PARSE_IN_DEBUG(a...)  printf("TDBASE_PRO: " a)
+# define PARSE_IN_DEBUG(a...)  printf("DEBUG_PARSE_IN: " a)
 #else
 # define PARSE_IN_DEBUG(a...)
 #endif
