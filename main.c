@@ -6,9 +6,9 @@
 
 int main(int argc, char **argv)
 {
-    float *data = malloc(sizeof(float)*100);
+    double *data;
 
-    read_float_input(data);
+    read_input(data);
 
     return 0;
 }

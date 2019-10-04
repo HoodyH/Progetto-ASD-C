@@ -5,12 +5,12 @@
 /*
 Read the arguments passed on function start
 */
-int read_args(int argc, char **argv, void* data);
+int read_args(int argc, char **argv, double* data);
 
 /*
-R
+Read
 */
-int read_float_input(float *data);
+int read_input(double *data);
 
 #ifdef DEBUG_PARSE_IN
 # define PARSE_IN_DEBUG(a...)  printf("DEBUG_PARSE_IN: " a)
